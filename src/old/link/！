@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct link
+{
+	int num;
+	struct link *next;
+} ;
+int n;
+struct link *creat(void)
+{
+	struct link *p0,*p1,*p2;
+	n=0;
+	p1=p2=(struct st *)malloc(sizeof(struct st));
+	scanf("%d",&p1->num);	
+	p0=NULL;
+	while(p1->num!=0)
+	{
+		n=n+1;
+		if(n==1) p0=p1;
+		else (p2->next)=p1;
+		p2=p1;
+		p1=(struct link *)malloc(sizeof(struct link));
+		scanf("%d",&p1->num);	
+	}
+	(p2->next)=NULL;
+	return p0;
+}
+void print(struct link *p0)
+{
+	struct link *p;
+	p=p0;
+	if(p0!=NULL);
+	do
+	{
+	printf("%d\n",p->num);
+	p=p->next;
+	}while(p!=NULL);
+}
+
+void main()
+{
+	struct link *p0;
+	p0=creat();
+	print(p0);
+}

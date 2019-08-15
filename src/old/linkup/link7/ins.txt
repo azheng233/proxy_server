@@ -1,0 +1,7 @@
+ser2.c 	->简单并发服务器
+	fork函数
+ser3.c  ->预先派生子进程，accept无上锁
+	./a.out (number)
+ser4.c  ->预先派生子进程，accept文件上锁
+	fcntl函数
+ser5.c  ->预先派生子进程，accept线程上锁

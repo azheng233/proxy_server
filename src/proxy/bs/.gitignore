@@ -1,0 +1,9 @@
+urlserver
+.svn*
+*.o
+.*.swp
+tags
+cscope.*
+core
+build.c
+.vs
